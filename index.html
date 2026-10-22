@@ -4,98 +4,100 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Spot ouvre et passe les portes rapides de CCEP en Wi-Fi : interface, plans, schémas, logiciel, documents et liste d&#x27;achat.">
-<title>Projet Soda · Spot et les portes rapides</title>
+<title>Projet Soda · portes rapides et Spot</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,600..900&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-<header class="band"><div class="wrap">
-  <div class="kick">Projet Soda · CCEP · Alternance</div>
-  <h1>Spot passe les portes rapides, tout seul</h1>
-  <div class="byline">Othmane Bennani · mis à jour le 22 octobre 2026</div>
-  <p class="lede">Six portes rapides en mode automatique. À côté de chaque armoire, un petit boîtier Wi-Fi appuie à la place d'un opérateur : bouton vert pour ouvrir, bouton de fermeture pour les portes qui ne redescendent pas seules. Ici, tout le travail : l'interface interactive, les plans, les schémas, le logiciel, les documents et la liste d'achat.</p>
+<header class="top"><div class="wrap">
+  <span class="id"><strong>Projet Soda</strong> · portes rapides et Spot · CCEP</span>
+  <span class="by">Othmane Bennani · 22 octobre 2026</span>
 </div></header>
 
+<section class="anim" aria-label="Animation du passage">
+  <div class="wrap">
+    <div class="frame"><iframe src="demo/index.html#anim" title="Spot arrive devant la porte, l'ouvre par le Wi-Fi et passe" tabindex="-1"></iframe></div>
+    <p class="cap">Spot arrive, demande l'ouverture par le Wi-Fi, le boîtier appuie sur le bouton vert, les caméras vérifient, Spot passe. <a href="demo/index.html">Interface complète</a></p>
+  </div>
+</section>
+
 <main class="wrap">
-  <section class="hero">
-    <a class="cover" href="demo/index.html"><img src="assets/img/cover_3d.jpg" alt="Spot devant une porte rapide : la demande Wi-Fi part vers le boîtier de la porte"></a>
-    <div class="herotext">
-      <span class="kick red">L'interface interactive</span>
-      <h2>Voir un passage complet, puis le câblage et le boîtier en 3D</h2>
-      <p>La porte s'ouvre, Spot attend, vérifie et passe. On peut changer les temps, provoquer une panne, ouvrir l'armoire, démonter le boîtier pièce par pièce. Le bouton « Présenter » lance un diaporama de 12 vues.</p>
-      <div class="acts"><a class="btn primary big" href="demo/index.html"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9.5-5.5z" fill="currentColor"/></svg>Ouvrir l'interface</a><a class="btn big" href="demo/index.html#presenter">Mode présentation</a></div>
-      <p class="note">Fonctionne aussi hors ligne : la page est autonome.</p>
+  <section id="documents">
+    <div class="sechead"><h2>Documents techniques</h2><a class="all" href="fichiers/documents_projet_soda.zip" download><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Tout télécharger · 2,0 Mo</a></div>
+    <ul class="docs">
+<li class="doc">
+  <a class="th" href="fichiers/plan_armoire.pdf" target="_blank" rel="noopener"><img src="apercus/armoire.jpg" alt="" loading="lazy" width="360" height="255"></a>
+  <div class="txt"><h3>Armoire électrique de la porte</h3><p>Porte vue de l&#x27;arrière et intérieur, redessinés d&#x27;après les photos avec leurs fils existants. Tableau des 7 points de raccordement à remplir pendant les essais.</p></div>
+  <div class="fmts"><a class="fmt" href="fichiers/plan_armoire.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PDF A3</span><small>191 Ko</small></a><a class="fmt" href="fichiers/plan_armoire.svg" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>SVG</span><small>176 Ko</small></a><a class="fmt" href="fichiers/plan_armoire.png" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PNG</span><small>470 Ko</small></a></div>
+</li>
+<li class="doc">
+  <a class="th" href="fichiers/plan_boitier.pdf" target="_blank" rel="noopener"><img src="apercus/boitier.jpg" alt="" loading="lazy" width="360" height="255"></a>
+  <div class="txt"><h3>Plan de câblage du boîtier</h3><p>Boîtier vu de face, couvercle retiré : bornier X2, fusible F1, redresseur, carte ESP32-RELAY02, chaque fil borne à borne.</p></div>
+  <div class="fmts"><a class="fmt" href="fichiers/plan_boitier.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PDF A3</span><small>90 Ko</small></a><a class="fmt" href="fichiers/plan_boitier.svg" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>SVG</span><small>92 Ko</small></a><a class="fmt" href="fichiers/plan_boitier.png" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PNG</span><small>455 Ko</small></a></div>
+</li>
+<li class="doc">
+  <a class="th" href="fichiers/schema_boitier_porte_revE.pdf" target="_blank" rel="noopener"><img src="apercus/schema.jpg" alt="" loading="lazy" width="360" height="255"></a>
+  <div class="txt"><h3>Schéma électrique KiCad, rév. E</h3><p>Raccordement dans l&#x27;armoire (S1, S2), câble W1, bornier X2, F1, pont GBU4G, condensateur 470 µF, carte (K1, K2). Netlist vérifiée.</p></div>
+  <div class="fmts"><a class="fmt" href="fichiers/schema_boitier_porte_revE.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PDF</span><small>220 Ko</small></a><a class="fmt" href="fichiers/schema_boitier_porte_revE.svg" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>SVG</span><small>1,2 Mo</small></a><a class="fmt" href="fichiers/schema_boitier_porte_revE.png" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PNG</span><small>446 Ko</small></a><a class="fmt" href="fichiers/schema_boitier_porte_revE_KiCad.zip" download><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>KiCad</span><small>13 Ko</small></a></div>
+</li>
+    </ul>
+  </section>
+
+  <section id="informatique">
+    <h2>Demande à l'informatique</h2>
+    <div class="it">
+      <ol class="asks"><li><span class="n">D1</span><strong>SSID dédié</strong><span class="d">2,4 GHz, canal 20 MHz, WPA2-Personal AES, sans portail captif</span></li><li><span class="n">D2</span><strong>VLAN dédié</strong><span class="d">sous-réseau IPv4 en /28 avec passerelle, hors des plages internes de Spot</span></li><li><span class="n">D3</span><strong>DHCP, 7 réservations</strong><span class="d">une adresse fixe par module, P01 à P07, réservée par adresse MAC</span></li><li><span class="n">D4</span><strong>Adresse fixe pour Spot</strong><span class="d">réservation de l&#x27;interface Wi-Fi du robot</span></li><li><span class="n">D5</span><strong>Règles de flux</strong><span class="d">Spot et mon PC vers les modules en TCP 80 et ICMP ; tout le reste interdit</span></li><li><span class="n">D6</span><strong>Accès de mon PC</strong><span class="d">vers les modules en TCP 80 et ICMP, pour la programmation et les essais</span></li><li><span class="n">D7</span><strong>Inventaire</strong><span class="d">inscription des 7 équipements</span></li></ol>
+      <div class="itdoc">
+        <a class="th" href="fichiers/demande_reseau_informatique.pdf" target="_blank" rel="noopener"><img src="apercus/reseau.jpg" alt="" loading="lazy" width="360" height="300"></a>
+        <p>Rien d'autre : pas d'internet, pas de DNS, pas de NTP, aucun changement sur le réseau actuel de Spot.</p>
+        <a class="fmt" href="fichiers/demande_reseau_informatique.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Demande complète · PDF</span><small>287 Ko</small></a>
+      </div>
     </div>
   </section>
 
-  <section class="block">
-    <h2>Comment ça marche</h2>
-    <ol class="steps"><li><span class="n">1</span><strong>Spot arrive devant la porte</strong><span>La mission l&#x27;amène au point d&#x27;attente. Le service porte-auto du CORE I/O prend la main.</span></li><li><span class="n">2</span><strong>Demande par le Wi-Fi</strong><span>Spot envoie la demande au boîtier de la porte, avec un jeton secret. Le module vérifie et répond.</span></li><li><span class="n">3</span><strong>Le relais K1 « appuie »</strong><span>K1 se ferme 500 ms en parallèle du bouton vert : l&#x27;armoire lance son cycle normal.</span></li><li><span class="n">4</span><strong>Les caméras confirment</strong><span>Spot vérifie que le passage est libre et qu&#x27;il reste le temps de passer, puis il franchit.</span></li></ol>
-    <p class="after">Pour les portes qui ne se referment pas seules, Spot demande la fermeture (relais K2, en parallèle du bouton de fermeture) une fois passé, après avoir vérifié avec sa caméra arrière que personne n'est sous la porte.</p>
-  </section>
-
-  <section class="block">
-    <div class="h2row"><h2>Les dossiers</h2><a class="btn primary" href="telechargements/Projet_Soda_portes_Spot_complet.zip" download><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0L4.5 6.5M8 10l3.5-3.5M2.5 13.5h11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Tout télécharger (5,9 Mo)</a></div>
-    <div class="folders"><a class="folder" href="dossiers/spot/index.html">
-  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
-  <span class="fname">Spot : robot et logiciel</span>
-  <span class="fdesc">Firmware, service porte-auto, tests, journaux</span>
-  <span class="fcount">8 fichiers · 785 Ko</span>
-</a><a class="folder" href="dossiers/armoire/index.html">
-  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
-  <span class="fname">Armoire électrique de la porte</span>
-  <span class="fdesc">Plan d&#x27;après photos, photos, points à trouver</span>
-  <span class="fcount">5 fichiers · 1,9 Mo</span>
-</a><a class="folder" href="dossiers/boitier/index.html">
-  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
-  <span class="fname">Boîtier de porte : électronique</span>
-  <span class="fdesc">Plan de câblage, schéma KiCad, Wokwi</span>
-  <span class="fcount">8 fichiers · 1,7 Mo</span>
-</a><a class="folder" href="dossiers/reseau/index.html">
-  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
-  <span class="fname">Réseau Wi-Fi</span>
-  <span class="fdesc">Demande à l&#x27;informatique, dossier de chantier</span>
-  <span class="fcount">3 fichiers · 781 Ko</span>
-</a><a class="folder" href="dossiers/achats/index.html">
-  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
-  <span class="fname">Liste d&#x27;achat</span>
-  <span class="fdesc">600,45 € HT pour six portes</span>
-  <span class="fcount">1 fichier · 15 Ko</span>
-</a><a class="folder" href="dossiers/simulations/index.html">
-  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
-  <span class="fname">Simulations</span>
-  <span class="fdesc">Redresseur ngspice, interface 3D</span>
-  <span class="fcount">5 fichiers · 150 Ko</span>
-</a><a class="folder" href="dossiers/documents/index.html">
-  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
-  <span class="fname">Documents</span>
-  <span class="fdesc">Tous les PDF à lire ou imprimer</span>
-  <span class="fcount">6 fichiers · 1,9 Mo</span>
-</a></div>
-  </section>
-
-  <section class="block">
-    <h2>En un coup d'œil</h2>
-    <div class="gallery">
-      <a href="dossiers/armoire/index.html"><img src="assets/img/plan_armoire.jpg" alt="Plan de l'armoire d'après les photos" loading="lazy"><span>L'armoire, d'après les photos</span></a>
-      <a href="dossiers/boitier/index.html"><img src="assets/img/plan_boitier.jpg" alt="Plan de câblage du boîtier" loading="lazy"><span>Le boîtier, fil par fil</span></a>
-      <a href="dossiers/boitier/index.html"><img src="assets/img/kicad.jpg" alt="Schéma KiCad du boîtier" loading="lazy"><span>Le schéma KiCad</span></a>
-      <a href="demo/index.html"><img src="assets/img/demo_boitier.jpg" alt="Boîtier en 3D" loading="lazy"><span>Le boîtier en 3D</span></a>
+  <section id="achats">
+    <div class="sechead"><h2>Liste d'achat</h2><a class="fmt" href="fichiers/liste_achat_portes_spot.xlsx" download><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8m0 0L4.8 7.3M8 10.5l3.2-3.2M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Excel</span><small>15 Ko</small></a></div>
+    <div class="sum">
+      <div><span class="k">À commander</span><span class="v">600,45 € HT</span></div>
+      <div><span class="k">Par porte</span><span class="v">100,08 € HT</span></div>
+      <div><span class="k">Pour</span><span class="v">6 portes + rechanges</span></div>
+      <div><span class="k">Fournisseurs</span><span class="v">RS, Rexel, Amazon</span></div>
     </div>
-  </section>
-
-  <section class="block two">
-    <div><h2>Ce qui est fait</h2><ul class="check"><li>Système retenu : Wi-Fi, une carte ESP32-RELAY02 par porte (K1 ouverture, K2 fermeture commandée).</li><li>Boîtier de porte dessiné : plan de câblage A3, schéma KiCad rév. E, maquette 3D fidèle à la carte.</li><li>Armoire de la porte pilote redessinée d&#x27;après les photos, avec un tableau des points à trouver aux essais.</li><li>Alimentation vérifiée en simulation : ≈ 32 V continu sur la carte, le fusible 1 A tient l&#x27;appel de courant.</li><li>Logiciel : firmware de la carte et service porte-auto, joués contre un simulateur de porte (35 tests et 54 vérifications).</li><li>Demande réseau prête pour l&#x27;informatique ; liste d&#x27;achat chiffrée, un lien par article.</li></ul></div>
-    <div><h2>La suite</h2><ol class="todo"><li>Valider la liste d&#x27;achat et commander les cartes en premier (délai annoncé : 90 jours).</li><li>Envoyer la demande réseau à l&#x27;informatique de CCEP.</li><li>Essais armoire consignée, avec la maintenance : trouver et noter les 7 points de raccordement.</li><li>Porte pilote : mesurer les temps (montée, temporisation, descente) et vérifier que la cellule voit Spot.</li><li>Compiler le firmware sur une vraie carte, puis régler la vision de Spot devant la porte.</li></ol></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th scope="col">Article</th><th scope="col">Référence</th><th scope="col" class="num">Prix du lot</th><th scope="col" class="num">Lots</th><th scope="col" class="num">Total HT</th></tr></thead>
+      <tbody>
+<tr class="cat"><th colspan="4" scope="colgroup">Module de porte</th><td class="num">236,80 €</td></tr>
+<tr><td>Carte Seeit ESP32-RELAY02 (Wi-Fi, 2 relais)<span class="sub">Reçoit les ordres de Spot par le Wi-Fi : relais K1 = ouverture, relais K2 = fermeture (portes sans fermeture automatique)</span></td><td><a href="https://fr.rs-online.com/web/p/products/2863995" target="_blank" rel="noopener">RS 286-3995</a><span class="sub">à l&#x27;unité</span></td><td class="num">27,20 €</td><td class="num">7</td><td class="num">190,40 €</td></tr>
+<tr><td>Câble FTDI TTL-232R-3V3 (USB vers série 3,3 V)<span class="sub">Programmer et configurer les cartes</span></td><td><a href="https://fr.rs-online.com/web/p/products/0429307" target="_blank" rel="noopener">RS 429-307</a><span class="sub">à l&#x27;unité</span></td><td class="num">23,20 €</td><td class="num">2</td><td class="num">46,40 €</td></tr>
+<tr><td>Entretoises nylon M3 et vis (assortiment)<span class="sub">Fixer la carte au fond de la boîte (4 par carte, 10 mm)</span></td><td><a href="https://www.amazon.fr/s?k=kit+entretoises+nylon+M3" target="_blank" rel="noopener">Amazon à choisir</a><span class="sub">assortiment</span></td><td class="num"><span class="pend">à relever</span></td><td class="num">1</td><td class="num">—</td></tr>
+<tr class="cat"><th colspan="4" scope="colgroup">Boîtier externe</th><td class="num">294,69 €</td></tr>
+<tr><td>Boîte Mureva 150 x 105 x 80, IP55<span class="sub">Boîtier du module, fixé au mur à côté de l&#x27;armoire</span></td><td><a href="https://www.rexel.fr/frx/Cat%C3%A9gorie/Appareillage-et-contr%C3%B4le-du-b%C3%A2timent/Boite-d%27encastrement-et-de-d%C3%A9rivation/Boite-%C3%A9tanche/Mureva-Box---bo%C3%AEte-de-d%C3%A9rivation-en-saillie---150-x-105-x-80-mm/SCHENN05087/p/71373641" target="_blank" rel="noopener">Rexel SCHENN05087</a><span class="sub">à l&#x27;unité</span></td><td class="num">24,96 €</td><td class="num">6</td><td class="num">149,76 €</td></tr>
+<tr><td>Rail DIN 35 x 7,5 mm perforé, barre de 1 m<span class="sub">Support des bornes : un tronçon de 6 cm vertical par boîte</span></td><td><a href="https://fr.rs-online.com/web/p/rails-din/0467416" target="_blank" rel="noopener">RS 467-416</a><span class="sub">paquet de 4 barres</span></td><td class="num">27,13 €</td><td class="num">1</td><td class="num">27,13 €</td></tr>
+<tr><td>Borne à ressort Wago 2002-1201, 2,5 mm²<span class="sub">X2.1-X2.2 contact K1 (ouverture), X2.3-X2.4 24 V AC, X2.5-X2.6 contact K2 (fermeture), X2.7 réserve</span></td><td><a href="https://fr.rs-online.com/web/p/borniers-pour-rail-din/5076535" target="_blank" rel="noopener">RS 507-6535</a><span class="sub">paquet de 10</span></td><td class="num">9,34 €</td><td class="num">4</td><td class="num">37,36 €</td></tr>
+<tr><td>Borne porte-fusible Wago 2002-1611 (fusible 5 x 20)<span class="sub">F1 : protège le 24 V AC pris dans l&#x27;armoire</span></td><td><a href="https://fr.rs-online.com/web/p/borniers-pour-rail-din/7581705" target="_blank" rel="noopener">RS 758-1705</a><span class="sub">paquet de 10</span></td><td class="num">49,29 €</td><td class="num">1</td><td class="num">49,29 €</td></tr>
+<tr><td>Fusible 5 x 20 mm 1 A rapide<span class="sub">Fusible de F1</span></td><td><a href="https://fr.rs-online.com/web/p/products/0630826" target="_blank" rel="noopener">RS 630-826</a><span class="sub">boîte de 10</span></td><td class="num">5,76 €</td><td class="num">1</td><td class="num">5,76 €</td></tr>
+<tr><td>Plaque d&#x27;extrémité Wago 2002-1291<span class="sub">Ferme le côté ouvert de la dernière borne</span></td><td><a href="https://www.rexel.fr/frx/Cat%C3%A9gorie/Produits-Industriels/Connectique-et-raccordement/Bloc-de-jonction-borne-de-c%C3%A2blage/TOPJOB%27S-Plaque-d%27extr%C3%A9mit%C3%A9-et-interm%C3%A9diaire-2C-Gris/WAG2002-1291/p/61957948" target="_blank" rel="noopener">Rexel WAG2002-1291</a><span class="sub">à l&#x27;unité</span></td><td class="num"><span class="pend">à relever</span></td><td class="num">6</td><td class="num">—</td></tr>
+<tr><td>Butée d&#x27;arrêt Wago 249-116<span class="sub">Bloque la rangée de bornes sur le rail</span></td><td><a href="https://fr.rs-online.com/web/p/products/7960460" target="_blank" rel="noopener">RS 796-0460</a><span class="sub">paquet de 5</span></td><td class="num">4,31 €</td><td class="num">3</td><td class="num">12,93 €</td></tr>
+<tr><td>Presse-étoupe M16 IP68 nylon, câble Ø 5 à 10 mm<span class="sub">Entrée du câble dans la boîte (1 utilisé, 1 réserve)</span></td><td><a href="https://fr.rs-online.com/web/p/products/2141064" target="_blank" rel="noopener">RS 214-1064</a><span class="sub">sachet de 10</span></td><td class="num">6,23 €</td><td class="num">2</td><td class="num">12,46 €</td></tr>
+<tr class="cat"><th colspan="4" scope="colgroup">Alimentation de la carte</th><td class="num">23,86 €</td></tr>
+<tr><td>Pont redresseur onsemi GBU4G (400 V, 4 A)<span class="sub">Transforme le 24 V AC de l&#x27;armoire en continu</span></td><td><a href="https://fr.rs-online.com/web/p/products/8067121" target="_blank" rel="noopener">RS 806-7121</a><span class="sub">tube de 20</span></td><td class="num">17,66 €</td><td class="num">1</td><td class="num">17,66 €</td></tr>
+<tr><td>Condensateur 470 µF 63 V radial 105 °C<span class="sub">Lisse la tension redressée</span></td><td><a href="https://fr.rs-online.com/web/p/products/7111615" target="_blank" rel="noopener">RS 711-1615</a><span class="sub">sachet de 10</span></td><td class="num">6,20 €</td><td class="num">1</td><td class="num">6,20 €</td></tr>
+<tr><td>Plaque à bandes (veroboard)<span class="sub">Support du pont et du condensateur</span></td><td><a href="https://www.amazon.fr/s?k=plaque+%C3%A0+bandes+veroboard" target="_blank" rel="noopener">Amazon à choisir</a><span class="sub">plaque</span></td><td class="num"><span class="pend">à relever</span></td><td class="num">1</td><td class="num">—</td></tr>
+<tr class="cat"><th colspan="4" scope="colgroup">Liaison avec l&#x27;armoire</th><td class="num">45,10 €</td></tr>
+<tr><td>Câble souple YSL-JZ 7G0,50<span class="sub">Fils 1-2 contact K1 (ouverture), 3-4 24 V AC, 5-6 contact K2 (fermeture), vert-jaune terre</span></td><td><a href="https://www.rexel.fr/frx/Cat%C3%A9gorie/Fils-et-C%C3%A2bles/C%C3%A2ble-de-contr%C3%B4le%2C-manutention-et-instrumentation/C%C3%A2ble-de-contr%C3%B4le%2C-commande-et-liaison-moteur/C%C3%A2ble-souple-de-commande-CL5-PVC-YSL-JZ-7G0%2C50-TGL/FILYSLJZ7G0%2C5TGL/p/62312351" target="_blank" rel="noopener">Rexel FILYSLJZ7G0,5TGL</a><span class="sub">au mètre</span></td><td class="num">1,26 €</td><td class="num">20</td><td class="num">25,20 €</td></tr>
+<tr><td>Presse-étoupe M20 IP68 nylon<span class="sub">Entrée du câble dans l&#x27;armoire de la porte</span></td><td><a href="https://fr.rs-online.com/web/p/products/6694664" target="_blank" rel="noopener">RS 669-4664</a><span class="sub">sachet de 5</span></td><td class="num">7,05 €</td><td class="num">2</td><td class="num">14,10 €</td></tr>
+<tr><td>Embouts de câblage isolés 0,5 mm²<span class="sub">Sertis sur chaque fil</span></td><td><a href="https://fr.rs-online.com/web/p/products/1787287" target="_blank" rel="noopener">RS 178-7287</a><span class="sub">sachet de 100</span></td><td class="num">2,90 €</td><td class="num">2</td><td class="num">5,80 €</td></tr>
+      </tbody>
+      <tfoot><tr><th colspan="4" scope="row">Total à commander</th><td class="num">600,45 €</td></tr></tfoot>
+    </table></div>
+    <p class="note">3 petits prix restent à relever (Entretoises nylon M3 et vis, Plaque d&#x27;extrémité Wago 2002-1291, Plaque à bandes) : quelques euros au total. Les cartes ont un délai annoncé de 90 jours : à commander en premier.</p>
+    <h3 class="cond">Seulement si nécessaire</h3><ul class="condl"><li><strong>Routeur de voyage TP-Link TL-WR902AC</strong> · <a href="https://fr.rs-online.com/web/p/products/2864650" target="_blank" rel="noopener">RS 286-4650</a> · 91,65 € HT. <span>Réseau Wi-Fi de test si l&#x27;informatique ne donne pas d&#x27;accès à temps.</span></li><li><strong>Clé Wi-Fi USB TP-Link Archer T2U Plus</strong> · <a href="https://fr.rs-online.com/web/p/products/2558427" target="_blank" rel="noopener">RS 255-8427</a> · 32,79 € HT. <span>Relier le CORE I/O au réseau de test.</span></li><li><strong>Foret étagé 6 à 30,5 mm</strong> · <a href="https://fr.rs-online.com/web/p/products/3990934" target="_blank" rel="noopener">RS 399-0934</a> · 78,80 € HT. <span>Percer l&#x27;armoire s&#x27;il n&#x27;y a pas d&#x27;entrée libre.</span></li><li><strong>Redresseur rail DIN Zander Aachen 456100</strong> · <a href="https://fr.rs-online.com/web/p/products/0562114" target="_blank" rel="noopener">RS 562-114</a> · 61,70 € HT. <span>Variante industrielle du pont redresseur.</span></li><li><strong>Alimentation Mean Well HDR-15-24</strong> · <a href="https://fr.rs-online.com/web/p/products/1457862" target="_blank" rel="noopener">RS 145-7862</a> · 18,93 € HT. <span>Si le transformateur de l&#x27;armoire est trop chargé.</span></li></ul>
   </section>
 </main>
-<footer class="foot"><div class="wrap">
-  <span>Projet Soda · CCEP · Othmane Bennani, alternance</span>
-  <span>Mis à jour le 22 octobre 2026 · <a href="index.html">Accueil du projet</a></span>
-</div></footer>
+
+<footer class="foot"><div class="wrap">Othmane Bennani · alternance CCEP · Projet Soda</div></footer>
 </body>
 </html>

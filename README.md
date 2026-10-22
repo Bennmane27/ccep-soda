@@ -1,10 +1,5 @@
-# Projet Soda : Spot passe les portes rapides
+# Projet Soda : portes rapides et Spot
 
-Site du projet (CCEP, alternance de Othmane Bennani) : interface interactive, plans, schémas, logiciel, documents et liste d'achat.
+Page du projet (CCEP, alternance d'Othmane Bennani) : animation du passage, documents techniques, demande à l'informatique, liste d'achat.
 
-- `index.html` : accueil du projet et dossiers
-- `demo/` : interface interactive (page autonome)
-- `dossiers/` : Spot, armoire, boîtier, réseau, achats, simulations, documents
-- `telechargements/` : tout le projet en un zip
-
-Publié avec GitHub Pages (branche `main`, dossier racine).
+Publiée avec GitHub Pages (branche `main`, dossier racine).
