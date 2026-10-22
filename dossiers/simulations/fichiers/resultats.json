@@ -1,0 +1,93 @@
+[
+ {
+  "vmoy": 31.652913021606864,
+  "vmax": 31.922407,
+  "vmin": 31.3699978,
+  "ondulation": 0.5524091999999996,
+  "ipk_appel": 9.04494389,
+  "i2t_appel": 0.11449881669840538,
+  "irms_regime": 0.08169300693381407,
+  "nom": "Nominal : 24 V AC, carte au repos (1 W)",
+  "params": {
+   "vrms": 24.0,
+   "r_tr": 1.0,
+   "p_load": 1.0
+  }
+ },
+ {
+  "vmoy": 31.078855632442465,
+  "vmax": 31.7451905,
+  "vmin": 30.3610629,
+  "ondulation": 1.3841275999999993,
+  "ipk_appel": 9.16966809,
+  "i2t_appel": 0.11835432515657983,
+  "irms_regime": 0.19319919867602245,
+  "nom": "Pointe : 24 V AC, Wi-Fi en émission + relais collé (2,6 W)",
+  "params": {
+   "vrms": 24.0,
+   "r_tr": 1.0,
+   "p_load": 2.6
+  }
+ },
+ {
+  "vmoy": 35.05710691191729,
+  "vmax": 35.3038989,
+  "vmin": 34.7997442,
+  "ondulation": 0.5041547000000008,
+  "ipk_appel": 9.99093365,
+  "i2t_appel": 0.13968595859341523,
+  "irms_regime": 0.07558730883233016,
+  "nom": "Transfo peu chargé : 26,4 V AC (+10 %), carte au repos",
+  "params": {
+   "vrms": 26.4,
+   "r_tr": 1.0,
+   "p_load": 1.0
+  }
+ },
+ {
+  "vmoy": 39.18428638008426,
+  "vmax": 39.2532814,
+  "vmin": 39.105375,
+  "ondulation": 0.14790639999999655,
+  "ipk_appel": 10.9656533,
+  "i2t_appel": 0.16797778227711527,
+  "irms_regime": 0.023784997499978887,
+  "nom": "Pire cas haut : 29 V AC (transfo peu chargé + secteur +10 %), carte presque à vide (0,3 W)",
+  "params": {
+   "vrms": 29.0,
+   "r_tr": 1.0,
+   "p_load": 0.3
+  }
+ },
+ {
+  "vmoy": 27.664178326528077,
+  "vmax": 28.3975796,
+  "vmin": 26.8663849,
+  "ondulation": 1.5311947000000004,
+  "ipk_appel": 8.22734014,
+  "i2t_appel": 0.09547106474432206,
+  "irms_regime": 0.21117446410303065,
+  "nom": "Pire cas bas : 21,6 V AC (secteur −10 %), pointe 2,6 W",
+  "params": {
+   "vrms": 21.6,
+   "r_tr": 1.0,
+   "p_load": 2.6
+  }
+ },
+ {
+  "vmoy": 38.8644189301848,
+  "vmax": 40.355781,
+  "vmin": 38.6157353,
+  "ondulation": 1.7400457000000031,
+  "ipk_appel": 13.2203007,
+  "i2t_appel": 0.24482704998972654,
+  "irms_regime": 0.056688781112799076,
+  "nom": "Courant d'appel pire cas : mise sous tension à la crête, 29 V AC, transfo puissant (0,3 Ω)",
+  "params": {
+   "vrms": 29.0,
+   "r_tr": 0.3,
+   "p_load": 1.0,
+   "t_on_deg": 90.0
+  }
+ }
+]

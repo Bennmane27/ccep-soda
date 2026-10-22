@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Spot ouvre et passe les portes rapides de CCEP en Wi-Fi : interface, plans, schémas, logiciel, documents et liste d&#x27;achat.">
+<title>Projet Soda · Spot et les portes rapides</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..900&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="band"><div class="wrap">
+  <div class="kick">Projet Soda · CCEP · Alternance</div>
+  <h1>Spot passe les portes rapides, tout seul</h1>
+  <div class="byline">Othmane Bennani · mis à jour le 22 octobre 2026</div>
+  <p class="lede">Six portes rapides en mode automatique. À côté de chaque armoire, un petit boîtier Wi-Fi appuie à la place d'un opérateur : bouton vert pour ouvrir, bouton de fermeture pour les portes qui ne redescendent pas seules. Ici, tout le travail : l'interface interactive, les plans, les schémas, le logiciel, les documents et la liste d'achat.</p>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <a class="cover" href="demo/index.html"><img src="assets/img/cover_3d.jpg" alt="Spot devant une porte rapide : la demande Wi-Fi part vers le boîtier de la porte"></a>
+    <div class="herotext">
+      <span class="kick red">L'interface interactive</span>
+      <h2>Voir un passage complet, puis le câblage et le boîtier en 3D</h2>
+      <p>La porte s'ouvre, Spot attend, vérifie et passe. On peut changer les temps, provoquer une panne, ouvrir l'armoire, démonter le boîtier pièce par pièce. Le bouton « Présenter » lance un diaporama de 12 vues.</p>
+      <div class="acts"><a class="btn primary big" href="demo/index.html"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9.5-5.5z" fill="currentColor"/></svg>Ouvrir l'interface</a><a class="btn big" href="demo/index.html#presenter">Mode présentation</a></div>
+      <p class="note">Fonctionne aussi hors ligne : la page est autonome.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Comment ça marche</h2>
+    <ol class="steps"><li><span class="n">1</span><strong>Spot arrive devant la porte</strong><span>La mission l&#x27;amène au point d&#x27;attente. Le service porte-auto du CORE I/O prend la main.</span></li><li><span class="n">2</span><strong>Demande par le Wi-Fi</strong><span>Spot envoie la demande au boîtier de la porte, avec un jeton secret. Le module vérifie et répond.</span></li><li><span class="n">3</span><strong>Le relais K1 « appuie »</strong><span>K1 se ferme 500 ms en parallèle du bouton vert : l&#x27;armoire lance son cycle normal.</span></li><li><span class="n">4</span><strong>Les caméras confirment</strong><span>Spot vérifie que le passage est libre et qu&#x27;il reste le temps de passer, puis il franchit.</span></li></ol>
+    <p class="after">Pour les portes qui ne se referment pas seules, Spot demande la fermeture (relais K2, en parallèle du bouton de fermeture) une fois passé, après avoir vérifié avec sa caméra arrière que personne n'est sous la porte.</p>
+  </section>
+
+  <section class="block">
+    <div class="h2row"><h2>Les dossiers</h2><a class="btn primary" href="telechargements/Projet_Soda_portes_Spot_complet.zip" download><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0L4.5 6.5M8 10l3.5-3.5M2.5 13.5h11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Tout télécharger (5,9 Mo)</a></div>
+    <div class="folders"><a class="folder" href="dossiers/spot/index.html">
+  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
+  <span class="fname">Spot : robot et logiciel</span>
+  <span class="fdesc">Firmware, service porte-auto, tests, journaux</span>
+  <span class="fcount">8 fichiers · 785 Ko</span>
+</a><a class="folder" href="dossiers/armoire/index.html">
+  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
+  <span class="fname">Armoire électrique de la porte</span>
+  <span class="fdesc">Plan d&#x27;après photos, photos, points à trouver</span>
+  <span class="fcount">5 fichiers · 1,9 Mo</span>
+</a><a class="folder" href="dossiers/boitier/index.html">
+  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
+  <span class="fname">Boîtier de porte : électronique</span>
+  <span class="fdesc">Plan de câblage, schéma KiCad, Wokwi</span>
+  <span class="fcount">8 fichiers · 1,7 Mo</span>
+</a><a class="folder" href="dossiers/reseau/index.html">
+  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
+  <span class="fname">Réseau Wi-Fi</span>
+  <span class="fdesc">Demande à l&#x27;informatique, dossier de chantier</span>
+  <span class="fcount">3 fichiers · 781 Ko</span>
+</a><a class="folder" href="dossiers/achats/index.html">
+  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
+  <span class="fname">Liste d&#x27;achat</span>
+  <span class="fdesc">600,45 € HT pour six portes</span>
+  <span class="fcount">1 fichier · 15 Ko</span>
+</a><a class="folder" href="dossiers/simulations/index.html">
+  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
+  <span class="fname">Simulations</span>
+  <span class="fdesc">Redresseur ngspice, interface 3D</span>
+  <span class="fcount">5 fichiers · 150 Ko</span>
+</a><a class="folder" href="dossiers/documents/index.html">
+  <span class="ficon"><svg viewBox="0 0 48 40" aria-hidden="true"><path d="M2 8a4 4 0 0 1 4-4h12l5 5h19a4 4 0 0 1 4 4v21a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor" opacity=".18"/><path d="M2 14h44v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z" fill="currentColor"/></svg></span>
+  <span class="fname">Documents</span>
+  <span class="fdesc">Tous les PDF à lire ou imprimer</span>
+  <span class="fcount">6 fichiers · 1,9 Mo</span>
+</a></div>
+  </section>
+
+  <section class="block">
+    <h2>En un coup d'œil</h2>
+    <div class="gallery">
+      <a href="dossiers/armoire/index.html"><img src="assets/img/plan_armoire.jpg" alt="Plan de l'armoire d'après les photos" loading="lazy"><span>L'armoire, d'après les photos</span></a>
+      <a href="dossiers/boitier/index.html"><img src="assets/img/plan_boitier.jpg" alt="Plan de câblage du boîtier" loading="lazy"><span>Le boîtier, fil par fil</span></a>
+      <a href="dossiers/boitier/index.html"><img src="assets/img/kicad.jpg" alt="Schéma KiCad du boîtier" loading="lazy"><span>Le schéma KiCad</span></a>
+      <a href="demo/index.html"><img src="assets/img/demo_boitier.jpg" alt="Boîtier en 3D" loading="lazy"><span>Le boîtier en 3D</span></a>
+    </div>
+  </section>
+
+  <section class="block two">
+    <div><h2>Ce qui est fait</h2><ul class="check"><li>Système retenu : Wi-Fi, une carte ESP32-RELAY02 par porte (K1 ouverture, K2 fermeture commandée).</li><li>Boîtier de porte dessiné : plan de câblage A3, schéma KiCad rév. E, maquette 3D fidèle à la carte.</li><li>Armoire de la porte pilote redessinée d&#x27;après les photos, avec un tableau des points à trouver aux essais.</li><li>Alimentation vérifiée en simulation : ≈ 32 V continu sur la carte, le fusible 1 A tient l&#x27;appel de courant.</li><li>Logiciel : firmware de la carte et service porte-auto, joués contre un simulateur de porte (35 tests et 54 vérifications).</li><li>Demande réseau prête pour l&#x27;informatique ; liste d&#x27;achat chiffrée, un lien par article.</li></ul></div>
+    <div><h2>La suite</h2><ol class="todo"><li>Valider la liste d&#x27;achat et commander les cartes en premier (délai annoncé : 90 jours).</li><li>Envoyer la demande réseau à l&#x27;informatique de CCEP.</li><li>Essais armoire consignée, avec la maintenance : trouver et noter les 7 points de raccordement.</li><li>Porte pilote : mesurer les temps (montée, temporisation, descente) et vérifier que la cellule voit Spot.</li><li>Compiler le firmware sur une vraie carte, puis régler la vision de Spot devant la porte.</li></ol></div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap">
+  <span>Projet Soda · CCEP · Othmane Bennani, alternance</span>
+  <span>Mis à jour le 22 octobre 2026 · <a href="index.html">Accueil du projet</a></span>
+</div></footer>
+</body>
+</html>

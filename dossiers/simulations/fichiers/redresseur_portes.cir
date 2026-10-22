@@ -1,0 +1,81 @@
+* =====================================================================
+*  Redresseur du boitier de porte - Projet Soda (CCEP) - 21/10/2026
+*  24 V AC de l'armoire -> fusible F1 -> cable 2 x 5 m -> pont GBU4G
+*  -> condensateur C1 470 uF 63 V -> carte ESP32-RELAY02 (accepte 7 a 60 V)
+*
+*  Quatre copies du meme circuit, simulees en meme temps :
+*    XH : pire cas haut   29 V AC (secteur +10 %, transfo peu charge), carte 0,3 W
+*    XN : nominal         24 V AC, carte 1 W
+*    XB : pire cas bas    21,6 V AC (secteur -10 %), carte 2,6 W (Wi-Fi + relais)
+*    XA : courant d'appel 29 V AC, transformateur puissant (0,3 ohm), carte 1 W
+*  Mise sous tension au sommet de la sinusoide (phase 90 deg) : pire cas.
+*
+*  Lancer : glisser ce fichier sur ngspice.exe, ou dans la fenetre ngspice :
+*    source "C:/chemin/vers/redresseur_portes.cir"
+* =====================================================================
+
+* diode du pont GBU4G : environ 0,75 V a 0,1 A et 1,0 V a 4 A (fiche onsemi)
+.option interp
+.model DGBU D(IS=1.4n N=1.6 RS=0.025 BV=400 CJO=50p)
+
+* VPK = tension de crete (24 V AC efficace -> 24 x 1,414 = 33,9 V)
+* RTR = resistance interne du transformateur, PW = puissance prise par la carte
+.subckt BOITIER plus moins params: VPK=33.94 RTR=1 PW=1
+* secondaire du transformateur de l'armoire (24 V AC, 50 Hz)
+Vs   ac   0   SIN(0 {VPK} 50 0 0 90)
+Rtr  ac   a2  {RTR}
+Ltr  a2   a3  2m
+* fusible F1 1 A rapide (resistance a froid)
+Rf   a3   a4  0.12
+* cable W1, 5 m aller et 5 m retour en 0,5 mm2
+Rw1  a4   p1  0.18
+Rw2  n1   0   0.18
+* pont de diodes BR1 GBU4G
+D1   p1   plus  DGBU
+D2   n1   plus  DGBU
+D3   moins p1   DGBU
+D4   moins n1   DGBU
+* condensateur C1 470 uF 63 V et sa resistance serie
+C1   plus c1x   470u IC=0
+Resr c1x  moins 0.15
+* la carte : convertisseur 7-60 V = puissance constante, coupe sous 6 V
+Bcarte plus moins I = {PW}/max(V(plus,moins),6)
+.ends
+
+XH  ph  mh  BOITIER params: VPK=41.01 RTR=1   PW=0.3
+XN  pn  mn  BOITIER params: VPK=33.94 RTR=1   PW=1
+XB  pb  mb  BOITIER params: VPK=30.55 RTR=1   PW=2.6
+XA  pa  ma  BOITIER params: VPK=41.01 RTR=0.3 PW=1
+
+.control
+set color0=white
+set color1=black
+set xbrushwidth=2
+tran 20u 300m 0 20u uic
+
+* tension recue par la carte, borne 7-60V moins GND
+let haut    = v(ph) - v(mh)
+let nominal = v(pn) - v(mn)
+let bas     = v(pb) - v(mb)
+let max_carte_60V   = 0*time + 60
+let condensateur_63V = 0*time + 63
+let min_carte_7V    = 0*time + 7
+plot haut nominal bas max_carte_60V condensateur_63V min_carte_7V ylimit 0 70 title 'Tension recue par la carte (V)' xlabel 'temps apres la mise sous tension' ylabel 'V'
+
+* courant dans le fusible F1 au demarrage
+let appel_nominal = abs(i(v.xn.vs))
+let appel_pire_cas = abs(i(v.xa.vs))
+plot appel_nominal appel_pire_cas xlimit 0 6m title 'Courant d appel dans F1 (A)' xlabel 'temps' ylabel 'A'
+
+* chiffres cles
+meas tran Vmoy_haut    avg haut    from=200m to=300m
+meas tran Vmoy_nominal avg nominal from=200m to=300m
+meas tran Vmoy_bas     avg bas     from=200m to=300m
+meas tran Vmax_demarrage max haut  from=0 to=300m
+meas tran Ipk_appel    max appel_pire_cas from=0 to=20m
+let i2 = appel_pire_cas * appel_pire_cas
+meas tran I2t_appel    integ i2 from=0 to=20m
+echo
+echo "Limites : carte 7 a 60 V, condensateur 63 V, fusible 1 A rapide ~1 A2s pour fondre"
+.endc
+.end
